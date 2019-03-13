@@ -160,9 +160,9 @@ namespace LINQ_Exercise
 
             
 
-            // foreach(Customer customer in customers) {
-
-            // }
+            foreach(Customer customer in customers) {
+                Console.WriteLine(customer);
+            }
         }
 
 

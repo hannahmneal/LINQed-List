@@ -22,7 +22,12 @@ namespace LINQ_Exercise {
         public string Name { get; set; }
         public double Balance { get; set; }
         public string Bank { get; set; }
+    }
+
+    public class RichPeople
+    {
         public List<string> Millionaires {get; set;}
+
     }
 
 }
