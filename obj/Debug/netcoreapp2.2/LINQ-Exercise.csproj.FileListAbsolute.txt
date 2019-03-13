@@ -1,0 +1,11 @@
+/Users/hannahneal/workspace/C-sharp/ch10-LINQ/LINQ-Exercise/bin/Debug/netcoreapp2.2/LINQ-Exercise.deps.json
+/Users/hannahneal/workspace/C-sharp/ch10-LINQ/LINQ-Exercise/bin/Debug/netcoreapp2.2/LINQ-Exercise.runtimeconfig.json
+/Users/hannahneal/workspace/C-sharp/ch10-LINQ/LINQ-Exercise/bin/Debug/netcoreapp2.2/LINQ-Exercise.runtimeconfig.dev.json
+/Users/hannahneal/workspace/C-sharp/ch10-LINQ/LINQ-Exercise/bin/Debug/netcoreapp2.2/LINQ-Exercise.dll
+/Users/hannahneal/workspace/C-sharp/ch10-LINQ/LINQ-Exercise/bin/Debug/netcoreapp2.2/LINQ-Exercise.pdb
+/Users/hannahneal/workspace/C-sharp/ch10-LINQ/LINQ-Exercise/obj/Debug/netcoreapp2.2/LINQ-Exercise.csprojAssemblyReference.cache
+/Users/hannahneal/workspace/C-sharp/ch10-LINQ/LINQ-Exercise/obj/Debug/netcoreapp2.2/LINQ-Exercise.csproj.CoreCompileInputs.cache
+/Users/hannahneal/workspace/C-sharp/ch10-LINQ/LINQ-Exercise/obj/Debug/netcoreapp2.2/LINQ-Exercise.AssemblyInfoInputs.cache
+/Users/hannahneal/workspace/C-sharp/ch10-LINQ/LINQ-Exercise/obj/Debug/netcoreapp2.2/LINQ-Exercise.AssemblyInfo.cs
+/Users/hannahneal/workspace/C-sharp/ch10-LINQ/LINQ-Exercise/obj/Debug/netcoreapp2.2/LINQ-Exercise.dll
+/Users/hannahneal/workspace/C-sharp/ch10-LINQ/LINQ-Exercise/obj/Debug/netcoreapp2.2/LINQ-Exercise.pdb
