@@ -61,7 +61,7 @@ namespace LINQ_Exercise
             //  IEnumerable<string> descend = names.OrderBy(name => name);
 
             List<string> descend = (from name in names
-                orderby name
+                orderby name descending
                 select name
             ).ToList();
 
