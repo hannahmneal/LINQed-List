@@ -57,6 +57,7 @@ namespace LINQ_Exercise
                 If you want to sort the elements within a sequence, then you will need to pass in an identity keySelector method that indicates that each element in the sequence is, itself, a key.
              */
 
+            // How to use this way (below)??
             //  IEnumerable<string> descend = names.OrderBy(name => name);
 
             List<string> descend = (from name in names
@@ -69,10 +70,19 @@ namespace LINQ_Exercise
             }
 
             // Build a collection of these numbers sorted in ascending order
-            // List<int> numbers = new List<int>()
-            // {
-            //     15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96
-            // };
+            List<int> numbers = new List<int>()
+            {
+                15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96
+            };
+
+            List<int> sortedNums = (from num in numbers
+            orderby num ascending
+            select num
+            ).ToList();
+
+            foreach(int num in sortedNums) {
+                Console.WriteLine($"Numbers in ascending order: {num}");
+            }
 
         }
     }
