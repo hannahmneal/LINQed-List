@@ -84,9 +84,11 @@ namespace LINQ_Exercise
                 Console.WriteLine($"Numbers in ascending order: {num}");
             }
 
+
             /*
                 AGGREGATE OPERATIONS
              */
+
 
              // Output how many numbers are in this list
             List<int> aggregateNums = new List<int>()
@@ -113,6 +115,29 @@ namespace LINQ_Exercise
 
             Console.WriteLine($"Most expensive product: {prices.Max()}");
 
+
+            /*
+                PARTITIONING OPERATIONS
+             */
+
+
+            /*
+            Store each number in the following List until a perfect square
+                is detected.
+
+            Ref: https://msdn.microsoft.com/en-us/library/system.math.sqrt(v=vs.110).aspx
+            */
+
+            List<double> wheresSquaredo = new List<double>()
+            {
+                66, 12, 8, 27, 82, 34, 7, 50, 19, 46, 81, 23, 30, 4, 68, 14, 16
+            };
+
+            foreach(double square in wheresSquaredo) {
+                if(Math.Sqrt(square) % 1 == 0) {
+                    Console.WriteLine($"This are the perfect squares: {square}");
+                }
+            }
         }
     }
 }
