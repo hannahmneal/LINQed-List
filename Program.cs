@@ -28,13 +28,13 @@ namespace LINQ_Exercise
             // fruits.GroupBy(fruit => fruit[0] = 'L');
 
             IEnumerable<string> LFruits = (from fruit in fruits
-                                           where fruit.StartsWith("L")
-                                           select fruit
+            where fruit.StartsWith("L")
+            select fruit
             ).ToList();
 
             foreach (string f in LFruits)
             {
-                Console.WriteLine($"All the L fruits:{f}");
+                // Console.WriteLine($"All the L fruits:{f}");
             }
 
             /*
@@ -66,7 +66,7 @@ namespace LINQ_Exercise
             ).ToList();
 
             foreach (string n in descend) {
-                Console.WriteLine($"Names in descending order: {n}");
+                // Console.WriteLine($"Names in descending order: {n}");
             }
 
             // Build a collection of these numbers sorted in ascending order
@@ -81,7 +81,7 @@ namespace LINQ_Exercise
             ).ToList();
 
             foreach(int num in sortedNums) {
-                Console.WriteLine($"Numbers in ascending order: {num}");
+                // Console.WriteLine($"Numbers in ascending order: {num}");
             }
 
 
@@ -96,7 +96,7 @@ namespace LINQ_Exercise
                 15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96
             };
 
-            Console.WriteLine($"Number of numbers in aggregateNums: {aggregateNums.Count()}");
+            // Console.WriteLine($"Number of numbers in aggregateNums: {aggregateNums.Count()}");
             // logs 14
 
             // How much money have we made?
@@ -105,7 +105,7 @@ namespace LINQ_Exercise
                 2340.29, 745.31, 21.76, 34.03, 4786.45, 879.45, 9442.85, 2454.63, 45.65
             };
 
-            Console.WriteLine($"Total of purchases: {purchases.Sum()}");
+            // Console.WriteLine($"Total of purchases: {purchases.Sum()}");
 
             // What is our most expensive product?
             List<double> prices = new List<double>()
@@ -113,7 +113,7 @@ namespace LINQ_Exercise
                 879.45, 9442.85, 2454.63, 45.65, 2340.29, 34.03, 4786.45, 745.31, 21.76
             };
 
-            Console.WriteLine($"Most expensive product: {prices.Max()}");
+            // Console.WriteLine($"Most expensive product: {prices.Max()}");
 
 
             /*
@@ -135,7 +135,7 @@ namespace LINQ_Exercise
 
             foreach(double square in wheresSquaredo) {
                 if(Math.Sqrt(square) % 1 == 0) {
-                    Console.WriteLine($"This are the perfect squares: {square}");
+                    // Console.WriteLine($"This are the perfect squares: {square}");
                 }
             }
 
@@ -158,11 +158,18 @@ namespace LINQ_Exercise
                 new Customer(){ Name="Sid Brown", Balance=49582.68, Bank="CITI"}
             };
 
-            
 
-            foreach(Customer customer in customers) {
-                Console.WriteLine(customer);
+// "Coll": shorthand for "collection"
+            // IEnumerable<Customer> RichPeople = customers.GroupBy(c => c.Balance);
+            IEnumerable<double> RichPeople =
+            customers
+            // .Where(customer => customer.Balance >= 1_000_000)
+            .GroupBy(c => customers.Balance);
+            foreach(double RichPerson in RichPeople) {
+
+                Console.WriteLine($"Balance: {RichPerson}");
             }
+
         }
 
 

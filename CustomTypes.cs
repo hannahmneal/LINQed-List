@@ -24,10 +24,4 @@ namespace LINQ_Exercise {
         public string Bank { get; set; }
     }
 
-    public class RichPeople
-    {
-        public List<string> Millionaires {get; set;}
-
-    }
-
 }
