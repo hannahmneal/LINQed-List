@@ -158,17 +158,23 @@ namespace LINQ_Exercise
                 new Customer(){ Name="Sid Brown", Balance=49582.68, Bank="CITI"}
             };
 
+            /*
+                var results = from p in persons
+                group p.car by p.PersonId into g
+                select new { PersonId = g.Key, Cars = g.ToList() };
+             */
 
-// "Coll": shorthand for "collection"
-            // IEnumerable<Customer> RichPeople = customers.GroupBy(c => c.Balance);
-            IEnumerable<double> RichPeople =
-            customers
+            // IEnumerable<Customer> RichPeople =
+            var RichPeople =
+            // customers
             // .Where(customer => customer.Balance >= 1_000_000)
-            .GroupBy(c => customers.Balance);
-            foreach(double RichPerson in RichPeople) {
+            // .GroupBy(c => c.Bank).ToList();
 
-                Console.WriteLine($"Balance: {RichPerson}");
-            }
+            // .GroupBy(c => string.Format());
+
+            // foreach(Customer RichPerson in RichPeople) {
+            //     Console.WriteLine($"Balance: {RichPerson}");
+            // }
 
         }
 

@@ -9,7 +9,6 @@
     BOA 1
     FTB 1
     CITI 1
-
  */
 
 namespace LINQ_Exercise {
